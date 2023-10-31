@@ -1,19 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor M3</title>
-  <link rel="stylesheet" href="main.css" />
-</head>
-
-<body>
-
-</body>
-<h1>Desafio m3</h1>
-
-<script src="bundle.js"></script>
-
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor M3</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="headerContainer">
+      <img class="logo" src="./img/logo-m3.png" alt="M3 Logo" />
+      <img class="icon" src="./img/lock.png" alt="" />
+    </div>
+    <hr class="hr" />
+    <div class="headerSubContainer">
+      <div class="tittleContainer">
+        <h1 class="mainTittle">Blusas</h1>
+        <div>
+          <div class="customDropdown">
+            <button id="order" class="btnDrop">
+              <span id="dropdownTitle">Ordenar por:</span>
+              <img src="./img/v.png" alt="" />
+            </button>
+            <ul class="dropdownOptions">
+              <li data-value="recentes">Mais recentes</li>
+              <li data-value="menorPreço">Menor preço</li>
+              <li data-value="maiorPreço">Maior preço</li>
+            </ul>
+          </div>
+          <div class="btnMobile"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bodyContainer">
+      <div class="filterContainer">
+        <h2 class="titleCores">CORES</h2>
+        <div class="filterColorsContainer"></div>
+        <h2 class="tittleTamanhos">TAMANHOS</h2>
+        <div class="filtersSizeContainer"></div>
+        <h2 class="titlePreco">FAIXA DE PREÇO</h2>
+        <div class="filtersPriceContainer"></div>
+      </div>
+      <div id="productsContainer"></div>
+    </div>
+    <div class="loadMoreBtnContainer">
+      <button id="loadMoreBtn">CARREGAR MAIS</button>
+    </div>
+    <div class="footerContainer">M3: IMPLANTAÇÃO DE E-COMMERCE VTEX</div>
+  </body>
+  <script src="bundle.js"></script>
 </html>
